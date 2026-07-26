@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pincode_lookup_india"
+version = "0.1.0"
+description = "Offline Indian pincode, district, and state lookup library"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Sagar Kumar", email = "sagarkumarsoh@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = [
+    "pincode",
+    "india",
+    "postal-code",
+    "district",
+    "state",
+    "lookup"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "pandas>=2.0.0"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pincode_lookup_india*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

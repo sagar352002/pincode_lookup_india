@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: pincode_lookup_india
+Version: 0.1.0
+Summary: Offline Indian pincode, district, and state lookup library
+Author-email: Sagar Kumar <sagarkumarsoh@gmail.com>
+License: MIT
+Keywords: pincode,india,postal-code,district,state,lookup
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.0.0
+Dynamic: license-file
+
+# pincode_lookup_india
+
+A small Python package for looking up Indian pincodes from a bundled CSV dataset.
+
+## Usage
+
+```python
+from pincode_lookup_india.lookup import lookup_by_pincode
+
+rows = lookup_by_pincode("504273")
+print(rows)
+```

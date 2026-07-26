@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include pincode_lookup_india/data *.csv
+recursive-include tests *.py
